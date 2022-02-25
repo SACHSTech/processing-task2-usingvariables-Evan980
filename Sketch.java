@@ -32,13 +32,13 @@ public class Sketch extends PApplet {
     fill(140, 70, 20);
 
   //Foreground
-    rect(-20, 375, 440, 400);
+    rect(width/-20, (float) (height*.9375),(float) (height*1.1), height);
    
   //Roof
-    triangle(width/2,height*15/100,width*775/1000,height*375/1000,width*225/1000,height*375/1000);
+    triangle(width/2,(float)(height*.15),(float) (width*.775),(float) (height*.375),(float) (width*.225),(float) (height*.375));
 
   //Body of house
-    rect(width*225/1000, height*375/1000, width*55/100, height*375/1000);
+    rect((float) (width*.225),(float) (height*.375),(float) (width*.55),(float) (height*.375));
 
   // Colour and stroke settings for sun
     fill(255, 255, 0);
@@ -52,7 +52,7 @@ public class Sketch extends PApplet {
     fill(255, 255, 255);
 
   //Window
-    ellipse(width/2, height*2625/10000, width/20, height/20);
+    ellipse(width/2,(float) (height*.2625), width/20, height/20);
   }
   
   
